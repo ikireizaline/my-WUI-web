@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Leaders & Join Us</title>
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f0f9f4;
+    color: #1c2c17;
+}
+
+header {
+    background: linear-gradient(rgba(0,50,0,0.5), rgba(0,50,0,0.5));
+    color: #fff;
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header .nav-links li a.active,
+header .nav-links li a:hover {
+    background-color: #28a745;
+    border-radius: 5px;
+}
+
+.programs-section, .leaders-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.programs-section h1, .leaders-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #1b5e20;
+}
+
+.programs-section p, .leaders-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.programs-container, .leaders-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.program-card, .leader-card, .auth-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.program-card:hover, .leader-card:hover, .auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.program-card h2, .leader-card h2, .auth-card h2 {
+    color: #28a745;
+    margin-bottom: 15px;
+}
+
+.program-card p, .leader-card p, .auth-card p {
+    font-size: 16px;
+    color: #2e7d32;
+}
+
+.leader-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.auth-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.auth-card a:hover {
+    background-color: #1b5e20;
+}
+
+.footer {
+    background-color: #1b5e20;
+    color: white;
+    padding-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 30px;
+    gap: 30px;
+}
+
+.footer-column {
+    max-width: 250px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #a5d6a7;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #c8e6c9;
+}
+
+.footer-bottom {
+    background-color: #145a32;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.auth-form input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.auth-form button {
+    width: 95%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.auth-form button:hover {
+    background-color: #1b5e20;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="leader.html">Leaders</a>
+            <a href="#register-login">Register/Login</a>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="programs-section" id="register-login">
+    <h1>Join Our Community</h1>
+    <p>Register to participate in our programs or login if you are already a member.</p>
+    <div class="programs-container">
+
+        <div class="auth-card">
+            <h2>Register</h2>
+            <form class="auth-form" action="https://formspree.io/f/xaqqypvj" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div class="auth-card">
+            <h2>Login</h2>
+            <form class="auth-form" action="https://formspree.io/f/xaqqypvj" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<section class="leaders-section">
+    <h1>Meet Our Leaders</h1>
+    <p>
+Our leadership team is made up of dedicated individuals who are passionate about
+youth empowerment, innovation, and community development. Together, they guide
+our mission, provide strategic direction, and ensure that every program creates
+a meaningful and lasting impact.
+    </p>
+
+    <div class="leaders-container">
+        <div class="leader-card">
+            <img src="images/aline (2).png" alt="Leader 1">
+            <h2>Ikirezi Aline</h2>
+            <p>Founder & CEO</p>
+            <p>
+She provides overall leadership and vision for the organization, focusing on
+empowering young people through education, mentorship, and leadership development.
+            </p>
+        </div>
+        <div class="leader-card">
+            <img src="images/sedu.jpg" alt="Leader 2">
+            <h2>Dushime Schadrack</h2>
+            <p>Chief Technology Officer</p>
+            <p>
+He leads all technology initiatives, ensuring that digital tools and platforms
+support innovation, learning, and efficient program delivery.
+            </p>
+        </div>
+        <div class="leader-card">
+            <img src="images/hyguette.png" alt="Leader 3">
+            <h2>Uwase Hyguette</h2>
+            <p>Head of Programs</p>
+            <p>
+She oversees the planning and implementation of programs, ensuring quality,
+relevance, and positive impact for all participants.
+            </p>
+        </div>
+        <div class="leader-card">
+            <img src="images/daniel.jpg" alt="Leader 4">
+            <h2>Ishimwe Daniel</h2>
+            <p>Operations Manager</p>
+            <p>
+He manages daily operations, coordination, and logistics to ensure smooth and
+effective functioning of all organizational activities.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Youth Leadership Network</h4>
+            <p>Empowering young people with leadership skills, confidence, and responsibility to serve their communities.</p>
+        </div>
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>Email: youthleadership@example.com</p>
+            <p>Phone: +250 782267073</p>
+        </div>
+        <div class="footer-column">
+            <h4>Address</h4>
+            <p>City: Kigali</p>
+            <p>Country: Rwanda</p>
+            <p>P.O Box: 1500</p>
+        </div>
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <p>Home</p>
+            <p>About</p>
+            <p>Programs</p>
+            <p>Contact</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Youth Leadership Network. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+

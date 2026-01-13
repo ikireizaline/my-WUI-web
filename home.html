@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.top-bar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 500;
+}
+
+.top-bar nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    height: 350px;
+    background: linear-gradient(
+        rgba(46, 125, 50, 0.85),
+        rgba(46, 125, 50, 0.85)
+    );
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: #ffffff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 500px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 40px;
+    background: #f4f6f4;
+}
+
+.card {
+    background: #ffffff;
+    padding: 25px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #333333;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #2e7d32;
+    color: #ffffff;
+    padding-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 30px;
+    gap: 30px;
+}
+
+.footer-column {
+    max-width: 250px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #f4f6f4;
+}
+
+.footer-bottom {
+    background-color: #1b5e20;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+</style>
+
+    <title>Youth Leadership Network</title>
+</head>
+<body>
+    <header class="top-bar">
+      <div class="logo">YLN</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="leader.html">Leaders</a>
+    </nav>  
+    </header>
+    <section class="hero">
+       <div class="hero-text">
+        <h1>Youth Leadership Network</h1>
+        <p>
+Empowering young people to lead with confidence, responsibility, and integrity.
+We nurture future leaders through training, mentorship, and community engagement.
+</p>
+
+    </div>
+    </section>
+    <section style="padding: 50px 60px; background: white;">
+    <h2 style="color:#0b4da2; margin-bottom:15px;">
+        Who We Are
+    </h2>
+    <p style="max-width:800px; line-height:1.8; color:#555;">
+        Youth Leadership Network (YLN) is a youth-focused organization dedicated to
+        developing responsible, confident, and visionary young leaders. We believe
+        that leadership starts with character, purpose, and service to the community.
+        Through structured programs and practical experiences, we prepare young people
+        to become positive change-makers in society.
+    </p>
+</section>
+
+    <section class="cards">
+        <div class="card">
+        <h3>Leadership Training</h3>
+        <p>
+            We provide leadership skills such as communication, decision-making,
+            teamwork, and self-confidence for youth.
+        </p>
+        <p>
+We equip young people with essential leadership skills including communication,
+decision-making, teamwork, and ethical leadership to help them succeed in life
+and community service.
+</p>
+
+        <a href="#">Read more →</a>
+    </div>
+     <div class="card">
+        <h3>Youth Workshops</h3>
+        <p>
+            Interactive workshops, seminars, and discussions that help young people
+            discover and develop their leadership potential.
+        </p>
+        <p>
+Our workshops provide a safe and engaging space for youth to learn, share ideas,
+build confidence, and discover their leadership potential through real-life topics.
+</p>
+
+        <a href="#">Read more →</a>
+    </div>
+
+    <div class="card">
+        <h3>Mentorship Program</h3>
+        <p>
+            We connect young leaders with mentors to guide, support, and inspire
+            them to serve their communities.
+        </p>
+        <p>
+We connect young leaders with experienced mentors who offer guidance, encouragement,
+and support to help them grow personally, academically, and socially.
+</p>
+        <a href="#">Read more →</a>
+    </div>
+    </section>
+    <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-column">
+            <h4>Youth Leadership Network</h4>
+            <p>
+                Empowering young people with leadership skills, confidence,
+                and responsibility to serve their communities.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Contact Us</h4>
+            <p>Email: youthleadership@example.com</p>
+            <p>Phone: +250 782267073</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Address</h4>
+            <p>City: Kigali</p>
+            <p>Country: Rwanda</p>
+            <p>P.O Box: 1500</p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Quick Links</h4>
+            <p>Home</p>
+            <p>About</p>
+            <p>Programs</p>
+            <p>Our leaders</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Youth Leadership Network. All rights reserved.</p>
+    </div>
+</footer>
+    
+</body>
+</html>
